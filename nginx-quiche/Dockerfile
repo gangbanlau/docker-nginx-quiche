@@ -43,8 +43,11 @@ RUN apt update && \
    rm -rf $HOME/.cargo $HOME/.rustup && \
    rm -rf /var/lib/apt/lists/*
 
+COPY nginx.conf /usr/local/nginx/conf/nginx.conf
+COPY run.sh /run.sh
+
 EXPOSE 80
 EXPOSE 443/udp
 EXPOSE 443/tcp
 
-CMD ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]
+CMD ["/run.sh"]
