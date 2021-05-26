@@ -11,3 +11,8 @@ Specify custom networks and publish ports for http
     
 Build and Up    
 docker-compose --env-file ./env up -d --build
+
+Upload file evaluation
+use browser open https://your-server:6443/upload
+
+

@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+# original file from https://github.com/yurymuski/nginx-http3
+
 # Versions
 ENV PATCH_NGINX_VERSION=1.16
 ENV NGINX_VERSION=${PATCH_NGINX_VERSION}.1 \
